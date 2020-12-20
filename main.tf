@@ -13,6 +13,6 @@ provider "aws" {  //Configures the named provider. For example, AWS.
 }
 
 resource "aws_instance" "example" {  //Defines a piece of infrastructure. Also includes the resource type and resource name.
-  ami           = "ami-04d29b6f966df1537"
+  ami           = var.amis
   instance_type = "t2.micro"
 }
