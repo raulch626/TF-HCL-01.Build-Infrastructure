@@ -5,7 +5,7 @@ variable "region" {
 variable "amis" {
   type = map(string)
   default = {
-    "us-east-1" = "ami-b374d5a5"
-    "us-west-2" = "ami-fc0b939c"
+    "us-east-1" = "ami-04d29b6f966df1537"
+    "us-west-2" = "ami-0e472933a1395e172"
   }
 }
