@@ -16,10 +16,6 @@ resource "aws_instance" "example" {  //Defines a piece of infrastructure. Also i
   ami           = var.amis[var.region]   //References the var.amis for dynamic lookup.
   instance_type = "t2.micro"
   key_name = "raulherrera"
+  vpc_security_group_ids = [aws_security_group.allow_web.id]
   subnet_id = aws_subnet.sn-web-B.id
-}
-
-resource "aws_eip" "ip" {
-  vpc      = true
-  instance = aws_instance.example.id
 }
