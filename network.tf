@@ -16,7 +16,7 @@
   
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.16.0/20"  
-      availability_zone = "us-east-1a"
+      availability_zone = "us-west-2a"
       
       tags = {
         Name = "sn-db-A"
@@ -27,7 +27,7 @@
     
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.32.0/20"  
-      availability_zone = "us-east-1a"
+      availability_zone = "us-west-2a"
       
       tags = {
         Name = "sn-app-A"
@@ -39,7 +39,7 @@
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.48.0/20"  
       map_public_ip_on_launch = true
-      availability_zone = "us-east-1a"
+      availability_zone = "us-west-2a"
       
       tags = {
         Name = "sn-web-A"
@@ -50,7 +50,7 @@
     
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.80.0/20"  
-      availability_zone = "us-east-1b"
+      availability_zone = "us-west-2b"
       
       tags = {
         Name = "sn-db-B"
@@ -61,7 +61,7 @@
     
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.96.0/20"  
-      availability_zone = "us-east-1b"
+      availability_zone = "us-west-2b"
       
       tags = {
         Name = "sn-app-B"
@@ -73,7 +73,7 @@
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.112.0/20"  
       map_public_ip_on_launch = true
-      availability_zone = "us-east-1b"
+      availability_zone = "us-west-2b"
 
       
       tags = {
@@ -85,7 +85,7 @@
     
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.144.0/20"  
-      availability_zone = "us-east-1c"
+      availability_zone = "us-west-2c"
       
       tags = {
         Name = "sn-db-C"
@@ -96,7 +96,7 @@
     
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.160.0/20"  
-      availability_zone = "us-east-1c"
+      availability_zone = "us-west-2c"
       
       tags = {
         Name = "sn-app-C"
@@ -108,7 +108,7 @@
       vpc_id     = aws_vpc.main.id
       cidr_block 	= "10.16.176.0/20"  
       map_public_ip_on_launch = true
-      availability_zone = "us-east-1c"
+      availability_zone = "us-west-2c"
       
       tags = {
         Name = "sn-web-C"
