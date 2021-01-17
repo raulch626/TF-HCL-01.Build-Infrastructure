@@ -131,6 +131,7 @@ resource "aws_internet_gateway" "igw" {
         Name = "a4l-vpc1-rt-web"
         }
   
+    # IPv4 default route
     route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
